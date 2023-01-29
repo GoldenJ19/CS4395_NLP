@@ -4,7 +4,7 @@
 This is a repository (sub-portfolio) containing all the programs created for the class, Human Language Technologies (AKA Natural Language Processing) during my 4th year of college.
 
 Notable File(s): <br/>
-• [Write-Up](Overview/Overview%20of%20ML.pdf) <br/>
+• [Write-Up](Overview/Overview%20of%20NLP.pdf) <br/>
 
 ## Assignment 1 - TBD
 
