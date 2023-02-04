@@ -6,12 +6,13 @@ This is a repository (sub-portfolio) containing all the programs created for the
 Notable File(s): <br/>
 • [Write-Up](Overview/Overview%20of%20NLP.pdf) <br/>
 
-## Assignment 1 - TBD
+## Assignment 1 - Text Processing with Python
 
-TBD.
+This simple assignment involved processing through a text file using regex pattern checks. It also had us try out object creation and serialization in python.
 
 Notable File(s): <br/>
-• TBD
+• [Overview](Assignment%201%20-%20Text%20Processing%20with%20Python/TextProcessing.pdf) <br/>
+• [Code](Assignment%201%20-%20Text%20Processing%20with%20Python/TextProcessing.py) <br/>
 
 ## Assignment 2 - TBD
 

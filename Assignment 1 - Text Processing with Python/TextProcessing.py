@@ -82,7 +82,8 @@ def process_input(file_input):
     people = dict()
 
     # Remove first line, so long as it exists...
-    file_input.readline()
+    while file_input.readable():
+        file_input.readline()
 
     # Process another line if there is another line to read...
     while file_input.readable():
@@ -158,6 +159,7 @@ def main():
     print("Processing input data...")
     people = process_input(file_input)
     print("Finished processing all input data.\n")
+    file_input.close()
 
     # Write to pickle file.
     print("Writing people to pickle file...")
