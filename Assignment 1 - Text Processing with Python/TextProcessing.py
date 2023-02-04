@@ -82,7 +82,7 @@ def process_input(file_input):
     people = dict()
 
     # Remove first line, so long as it exists...
-    while file_input.readable():
+    if file_input.readable():
         file_input.readline()
 
     # Process another line if there is another line to read...
