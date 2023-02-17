@@ -18,7 +18,8 @@ from nltk.corpus import stopwords
 # Create function(s).
 def preprocess_input(stream):
     """
-    Function description goes here!
+    Processes through an input stream, tokenizing its text, and extracting its unique nouns. All while printing out
+    relevant information about what is being processed to the console.
 
     :param stream: File stream of text to process.
     :return: Tuple containing the list of tokens and the list of nouns.
@@ -69,7 +70,8 @@ def preprocess_input(stream):
 
 def get_censored_word(word, letters_guessed):
     """
-    Function description goes here!
+    Formats a given word based off of what letters of the word have been guessed, to hide un-guessed letters.
+    For example, for the word "hello" and letters_guessed ['a','e','i','o','u'], return "_ e _ _ o".
 
     :param word: Word the user must guess
     :param letters_guessed: List of letters guessed already
@@ -85,7 +87,8 @@ def get_censored_word(word, letters_guessed):
 
 def check_win_condition(word, letters_guessed):
     """
-    Function description goes here!
+    Returns true if all letters in the given word are a part of the letters_guessed list. In other words,
+    a win state is given if all letters have been guessed correctly.
 
     :param word: Word the user must guess
     :param letters_guessed: List of letters guessed already
@@ -99,7 +102,8 @@ def check_win_condition(word, letters_guessed):
 
 def guessing_game(word_list, start_score=5):
     """
-    Function description goes here!
+    Starts a guessing game, which will randomly select a word from a given word list, which the user can interact
+    with through the GUI.
 
     :param word_list: List of potential words to be used in the guessing game.
     :param start_score: Starting score for this game. Default value is 5.
@@ -230,7 +234,8 @@ def guessing_game(word_list, start_score=5):
 
 def main():
     """
-    Function description goes here!
+    This program is designed to process text from a given data file, and extract its unique nouns. It will then use
+    those unique nouns as words in a word guessing game, to which the user can play the game as much as they like.
 
     :return: exit code (0 = success, 1 = missing argument(s), 2 = invalid input file name)
     """
