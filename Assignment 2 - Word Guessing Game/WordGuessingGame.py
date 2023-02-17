@@ -38,7 +38,7 @@ def preprocess_input(stream):
             unique_tokens.insert(0, token)
     # Calculate Lexical Diversity.
     lexical_diversity = len(unique_tokens) / len(tokens)
-    print("Lexical Diversity: ", lexical_diversity)
+    print("Lexical Diversity: ", round(lexical_diversity, 2))
 
     # Get rid of punctuation tokens and normalize to lowercase...
     tokens = [token.lower() for token in tokens if token.isalpha() and token not in stopwords.words("english")
@@ -58,7 +58,6 @@ def preprocess_input(stream):
     for token, pos in tags:
         if pos == "NN":  # "NN" in pos: (need to ask about this)
             nouns.insert(0, token)
-    print(nouns)
 
     # Print number of tokens & number of nouns.
     print("Number of tokens: ", len(tokens))
