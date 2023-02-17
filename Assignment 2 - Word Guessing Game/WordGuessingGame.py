@@ -7,9 +7,10 @@ Professor: Dr. Mazidi
 
 """
 
-
 import sys as system
 import os.path as path
+import PySimpleGUI as gui
+import random
 from nltk import word_tokenize, WordNetLemmatizer, pos_tag
 from nltk.corpus import stopwords
 
@@ -55,7 +56,7 @@ def preprocess_input(stream):
     # Create list of noun-only lemmas...
     nouns = []
     for token, pos in tags:
-        if "NN" in pos:
+        if pos == "NN":  # "NN" in pos: (need to ask about this)
             nouns.insert(0, token)
     print(nouns)
 
@@ -67,14 +68,165 @@ def preprocess_input(stream):
     return tokens, nouns
 
 
-def guessing_game(word_list):
+def get_censored_word(word, letters_guessed):
+    """
+    Function description goes here!
+
+    :param word: Word the user must guess
+    :param letters_guessed: List of letters guessed already
+    :return: string containing formatted word censored to only show correct guesses
+    """
+    censored_word = ""
+    for i in range(len(word)):
+        # Format to only show correctly guessed letters
+        censored_word += word[i] if word[i] in letters_guessed else "_"
+        censored_word += "" if i == len(word) - 1 else " "
+    return censored_word
+
+
+def check_win_condition(word, letters_guessed):
+    """
+    Function description goes here!
+
+    :param word: Word the user must guess
+    :param letters_guessed: List of letters guessed already
+    :return: boolean denoting win condition
+    """
+    for letter in word:
+        if letter not in letters_guessed:
+            return False
+    return True
+
+
+def guessing_game(word_list, start_score=5):
     """
     Function description goes here!
 
     :param word_list: List of potential words to be used in the guessing game.
-    :return:
+    :param start_score: Starting score for this game. Default value is 5.
+    :return: Ending score
     """
-    ## CODE GOES HERE
+    # Select word
+    random.seed()
+    word_index = random.randint(0, len(word_list))
+    word = word_list[word_index]
+    # print("(DEBUG) Selected Index: " + str(word_index) + "\nWord: " + word)
+
+    # Create game attributes
+    score = start_score
+    letters_guessed = []
+
+    # Create GUI Window
+    gui.SetOptions(
+        text_element_background_color="#DADADA",
+        element_background_color="#DADADA",
+        background_color="#DADADA",
+        input_elements_background_color="#FFFFFF",
+        button_color=("#000000", "#AC3E31"),
+        text_color="#000000",
+        font=("MS Sans Serif", 10)
+    )
+    game_layout = [
+        [gui.Text("Guessing Game", text_color="#DBAE58", font=("MS Sans Serif", 18, "bold"))],
+        [gui.Text("Word: " + get_censored_word(word, letters_guessed), enable_events=True, key="word",
+                  font=("MS Sans Serif", 10, "bold"))],
+        [gui.InputText(size=(25, 1), enable_events=True, key="input")],
+        [gui.Button("Guess", key="guess", bind_return_key=True)],
+        [gui.Text("Score: " + str(score), font=("MS Sans Serif", 6), enable_events=True, key="score"), gui.Push()]
+    ]
+    game_window = gui.Window(
+        "Guessing Game",
+        layout=game_layout,
+        size=(300, 160),
+        element_justification="center"
+    )
+
+    # Present Window
+    game_active = True
+    while game_active:
+        # Read events
+        game_event, game_values = game_window.read()
+        if game_event == gui.WIN_CLOSED:
+            score = -100
+            break
+        elif game_event == "guess":
+            # Remove any non-letters from inputted guess
+            guesses = str(game_values["input"])
+            for c in guesses:
+                if not c.isalpha():
+                    guesses = guesses.replace(c, "")
+
+            # Check if entire word was guessed
+            if guesses == word:
+                letters_left = 0
+                for guess in guesses:
+                    if guess not in letters_guessed:
+                        letters_left += 1
+                        letters_guessed.insert(0, guess)
+                score += letters_left
+                gui.popup_auto_close("You correctly guessed the word, \"" + word + "\"!\n\n" +
+                                     "(+" + str(letters_left) + " score)\n\nYou win!",
+                                     title="Correct Guess",
+                                     auto_close_duration=1)
+
+                # Set game state to inactive; break out of for loop
+                game_active = False
+                break
+
+            # Split guess into characters
+            for guess in guesses:
+                if guess not in letters_guessed and guess in word:
+                    # Insert letter into guessed letter list, update score
+                    letters_guessed.insert(0, guess)
+                    score += 1
+
+                    if check_win_condition(word, letters_guessed):
+                        # Notify user of win, exit game.
+                        gui.popup_auto_close("Congrats! You guessed correctly, which completed the word.\n\n" +
+                                             "(+1 score)\n\nYou win!",
+                                             title="Correct Guess",
+                                             auto_close_duration=1)
+
+                        # Set game state to inactive; break out of for loop
+                        game_active = False
+                        break
+                    else:
+                        # Notify user of correct guess
+                        gui.popup_auto_close("You correctly guessed the letter \"" + guess + "\"\n\n(+1 score)",
+                                             title="Correct Guess",
+                                             auto_close_duration=1)
+                elif guess in letters_guessed:
+                    # Notify user of repeat guess
+                    gui.popup_auto_close("You've already guessed the letter \"" + guess + "\". Ignoring input.",
+                                         title="Notice",
+                                         auto_close_duration=1)
+                else:
+                    # Insert letter into guessed letter list, update score
+                    letters_guessed.insert(0, guess)
+                    score -= 1
+
+                    if score < 0:
+                        # Notify user of loss, exit game.
+                        gui.popup_auto_close(
+                            "Sorry. You guessed wrong, which caused your score to go negative.\n\nYou Lose! :(",
+                            title="Incorrect Guess",
+                            auto_close_duration=1)
+
+                        # Set game state to inactive; break out of for loop
+                        game_active = False
+                        break
+                    else:
+                        # Notify user of incorrect guess
+                        gui.popup_auto_close("You incorrectly guessed the letter \"" + guess + "\"\n\n(-1 score)",
+                                             title="Incorrect Guess",
+                                             auto_close_duration=1)
+
+                # Update GUI to match game state
+                game_window["word"].update("Word: " + get_censored_word(word, letters_guessed))
+                game_window["score"].update("Score: " + str(score))
+                game_window["input"].update("")
+    game_window.close()
+    return score
 
 
 def main():
@@ -128,7 +280,35 @@ def main():
     common_words = [noun for noun in dict(list(noun_dict.items())[:50])]
 
     # Run the guessing game:
-    guessing_game(common_words)
+    continue_playing = True
+    score = 5
+    high_score = 0
+    while continue_playing:
+        # Play the game
+        score = guessing_game(common_words, score)
+        high_score = score if high_score < score else high_score
+
+        # Ask if the user wants to play again
+        if score >= 0:
+            # User won, Continue with previous score
+            response = gui.popup_yes_no("You finished this guessing game with a score of " + str(score) +
+                                        ". Your highest score was " + str(high_score) + ".\n\n" +
+                                        "Would you like to continue playing?", title="Continue Playing?")
+            # Process response. Assume Yes if response unexpected.
+            if response == "No":
+                continue_playing = False
+        elif score == -100:
+            # User closed window (special value). Close program.
+            continue_playing = False
+        else:
+            # User lost, ask if they want to start again
+            response = gui.popup_yes_no("You lost the game. Your highest score was " + str(high_score) + ".\n\n" +
+                                        "Would you like to play again?", title="Play Again?")
+            # Process response. Assume no if response unexpected.
+            if response == "Yes":
+                score = high_score = 5
+            else:
+                continue_playing = False
 
     # Program complete, terminate the program. (exit code 0)
     exit(0)
