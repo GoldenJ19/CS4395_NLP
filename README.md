@@ -36,7 +36,7 @@ You can view the assignment 2 directory [here](Assignment%202%20-%20Word%20Guess
 *Notable File(s):* <br/>
 • [Code](Assignment%202%20-%20Word%20Guessing%20Game/WordGuessingGame.py) <br/>
 
-## **Assignment 3 - TBD**
+## **Assignment 3 - WordNet**
 
 TBD.
 
