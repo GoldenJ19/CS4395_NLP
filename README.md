@@ -36,21 +36,24 @@ You can view the assignment 2 directory [here](Assignment%202%20-%20Word%20Guess
 *Notable File(s):* <br/>
 • [Code](Assignment%202%20-%20Word%20Guessing%20Game/WordGuessingGame.py) <br/>
 
-## **Assignment 3 - TBD**
+## **Assignment 3 - WordNet**
+
+This assignment involved exploring the WordNet and SentiWordNet APIs of the NLTK library. Specifically, we explore word relations/hierarchies, sentiment scoring, and collocation identification.
+
+You can view the assignment directory [here](Assignment%203%20-%20WordNet).
+
+*Notable File(s):* <br/>
+• [Overview](Assignment%203%20-%20WordNet/WordNet.pdf) <br/>
+• [Code](Assignment%203%20-%20WordNet/WordNet.ipynb) <br/>
+
+## **Assignment 4 - N-Gram Language Model**
 
 TBD.
 
 *Notable File(s):* <br/>
 • TBD
 
-## **Assignment 4 - TBD**
-
-TBD.
-
-*Notable File(s):* <br/>
-• TBD
-
-## **Assignment 5 - TBD**
+## **Assignment 5 - Web Crawler**
 
 TBD
 
