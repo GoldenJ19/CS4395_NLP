@@ -38,10 +38,13 @@ You can view the assignment 2 directory [here](Assignment%202%20-%20Word%20Guess
 
 ## **Assignment 3 - WordNet**
 
-TBD.
+This assignment involved exploring the WordNet and SentiWordNet APIs of the NLTK library. Specifically, we explore word relations/hierarchies, sentiment scoring, and collocation identification.
+
+You can view the assignment directory [here](Assignment%203%20-%20WordNet).
 
 *Notable File(s):* <br/>
-• TBD
+• [Overview](Assignment%203%20-%20WordNet/WordNet.pdf) <br/>
+• [Code](Assignment%203%20-%20WordNet/WordNet.ipynb) <br/>
 
 ## **Assignment 4 - TBD**
 
