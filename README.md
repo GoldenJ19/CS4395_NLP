@@ -46,14 +46,14 @@ You can view the assignment directory [here](Assignment%203%20-%20WordNet).
 • [Overview](Assignment%203%20-%20WordNet/WordNet.pdf) <br/>
 • [Code](Assignment%203%20-%20WordNet/WordNet.ipynb) <br/>
 
-## **Assignment 4 - TBD**
+## **Assignment 4 - N-Gram Language Model**
 
 TBD.
 
 *Notable File(s):* <br/>
 • TBD
 
-## **Assignment 5 - TBD**
+## **Assignment 5 - Web Crawler**
 
 TBD
 
