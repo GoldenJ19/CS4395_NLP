@@ -13,9 +13,13 @@ This simple assignment involved processing through a text file using regex patte
 You can view the assignment 1 directory [here](Assignment%201%20-%20Text%20Processing%20with%20Python).
 
 *Run Instructions:* <br/>
-• Open command prompt into the directory where the .py file is. <br/>
-• Use the command 'python TextProcessing.py data.csv' to run the program. <br/>
-    • You can replace 'data.csv' with the path to any file of your choosing. It should follow a similar format as the provided data.csv file, though.
+<ul>
+    <li>Open command prompt into the directory where the .py file is.</li>
+    <li>Use the command 'python TextProcessing.py data.csv' to run the program.</li>
+    <ul>
+        <li>You can replace 'data.csv' with the path to any file of your choosing. It should follow a similar format as the provided data.csv file, though.</li>
+    </ul>
+</ul>
 
 *Notable File(s):* <br/>
 • [Overview](Assignment%201%20-%20Text%20Processing%20with%20Python/TextProcessing.pdf) <br/>
