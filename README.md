@@ -65,14 +65,16 @@ You can view the assignment directory [here](Assignment%204%20-%20N-Gram%20Langu
 - [Code - Build Language Model](Assignment%204%20-%20N-Gram%20Language%20Model/BuildLM.py) 
 - [Code - Evaluate Language Model](Assignment%204%20-%20N-Gram%20Language%20Model/EvaluateLM.py) 
 
-## **Assignment 5 - Web Crawler**
+## **Assignment 5 - Sentence Parsing**
 
-TBD
+This assignment involved performing sentence parsing by hand on a complex sentence of our choosing. For that reason, there was no programming involved in this assignment. This exists in the portfolio to demonstrate my understanding of sentence parsing approaches.
+
+You can view the assignment directory [here](Assignment%205%20-%20Sentence%20Parsing).
 
 *Notable File(s):* 
-- TBD
+- [Submission](Assignment%205%20-%20Sentence%20Parsing/Sentence%20Parsing.pdf)
 
-## **Assignment 6 - TBD**
+## **Assignment 6 - Web Crawler**
 
 TBD.
 
