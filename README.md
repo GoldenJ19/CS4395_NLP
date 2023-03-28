@@ -93,9 +93,11 @@ You can view the assignment directory [here](Assignment%206%20-%20Web%20Crawler)
 - [Code - Scrape Webpage](Assignment%206%20-%20Web%20Crawler/ScrapeWebpage.py)
 - [Code - Build Knowledge Base](Assignment%206%20-%20Web%20Crawler/BuildKB.py)
 
-## **Assignment 7 - TBD**
+## **Assignment 7 - Text Classification**
 
-TBD.
+This assignment involved using various machine learning algorithms to perform text classification on a data set of our choosing.
+
+You can view the assignment directory [here](Assignment%207%20-%20Text%20Classification).
 
 *Notable File(s):* 
 - TBD
