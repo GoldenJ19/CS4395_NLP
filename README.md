@@ -100,7 +100,8 @@ This assignment involved using various machine learning algorithms to perform te
 You can view the assignment directory [here](Assignment%207%20-%20Text%20Classification).
 
 *Notable File(s):* 
-- TBD
+- [Overview](Assignment%207%20-%20Text%20Classification/TextClassification.pdf)
+- [Code](Assignment%207%20-%20Text%20Classification/TextClassification.ipynb)
 
 ## **Assignment 8 - TBD**
 
