@@ -109,3 +109,25 @@ TBD.
 
 *Notable File(s):* 
 - TBD
+
+## **Assignment 9 - Chatbot**
+
+This assignment involved us creating a simple chatbot, focused on a specific topic of interest. It is expected to remember things about the user and be able to interact with the user.
+
+You can view the assignment directory [here](Assignment%209%20-%20Chatbot).
+
+*Run Instructions:* 
+- Open command prompt into the directory where the .py file is. 
+- Use the command 'python PokerChatbot.py' to run the program.
+- Once the program reads the knowledge base JSON file, and creates the machine learning model, you can enter your name and begin chatting.
+
+*Notable File(s):* 
+- [Report](Assignment%209%20-%20Chatbot/design_docs/Chatbot%20Project%20Report.pdf)
+- [Code](Assignment%209%20-%20Chatbot/PokerChatbot.py)
+
+## **Assignment 10 - Text Classification 2**
+
+TBD.
+
+*Notable File(s):* 
+- TBD
