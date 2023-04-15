@@ -1,0 +1,347 @@
+{
+    "kb": 
+    [
+        {
+            "tag": "unknown",
+            "patterns": [""],
+            "responses": ["I'm not sure what you mean.", "What exactly do you mean?", "How is that related?", "I'm confused what you're stating.", "Could you rephrase that?"]
+        },
+
+        {
+            "tag": "chatbot",
+            "patterns": ["What can you do", "What are you capable of", "What are you", "What can I do with you", "How can you help me", "How can I use you", "What is your purpose"],
+            "responses": ["I'm a Poker Chatbot. I can answer any basic questions about poker and basic poker strategy.", "I'm a Poker Chatbot. I can chat with you about poker, or yourself if you prefer.", "I'm a Poker Chatbot. If I make a mistake in identifying what you said, please let me know."]
+        },
+        {
+            "tag": "conversation_smalltalk_history",
+            "patterns": ["remember what talked about", "what talk about before", "talked before"],
+            "responses": ["<remark>"]
+        },
+        {
+            "tag": "conversation_smalltalk_howareyou",
+            "patterns": ["how are you", "how going", "how everything", "what up"],
+            "responses": ["I'm good, thanks. How about you, <name>?", "I'm fine! <remark>"]
+        },
+        {
+            "tag": "smalltalk_greeting",
+            "patterns": ["hi", "hello", "been a long time", "been a minute", "been a while"],
+            "responses": ["Hello <name>!", "Hi <name>!", "Hey there <name>!"]
+        },
+        {
+            "tag": "conversation_opinion",
+            "patterns": ["What do you think about _", "What are your thoughts on _", "What is your opinion on _", "How do you feel about _"],
+            "responses": ["Since I am a simple Chatbot, I am incapable of forming my own opinions. What is your opinion on it though?"]
+        },
+        {
+            "tag": "gratitude",
+            "patterns": ["Thank you", "Thanks", "Appreciate it"],
+            "responses": ["You're very welcome.", "My pleasure!", "Of course."]
+        },
+        {
+            "tag": "conversation_user_interests_like",
+            "patterns": ["I like _", "I love _", "I enjoy _", "I admire _", "I respect _", "I'm a fan of _", "I'm a big fan of _", "I adore _", "I dig _", "_ are good", "_ are great", "_ are amazing", "_ are awesome", "_ is great", "_ is good", "_ is amazing", "_ is awesome"],
+            "responses": ["Why do like <topic>?"]
+        },
+        {
+            "tag": "conversation_user_interests_dislike",
+            "patterns": ["I dislike _", "I hate _", "I loathe _", "I despise _", "I can't stand _", "_ suck", "_ sucks", "_ bad", "_ awful", "_ deplorable"],
+            "responses": ["What don't you like about <topic>?"]
+        },
+        {
+            "tag": "conversation_user_life",
+            "patterns": ["I just got a _", "I have a _", "I went _", "My _"],
+            "responses": ["Interesting. Is there anything you'd like to share about it, <name>?", "Tell me more about the <topic>.", "How do you feel about it?"]
+        },
+        {
+            "tag": "conversation_replies",
+            "patterns": [null],
+            "responses": [
+                ["Awesome!", "Great!", "Cool!"],
+                ["That's good to know.", "Thank you for sharing, <name>!"]
+            ]
+        },
+        {
+            "tag": "conversation_confused",
+            "patterns": ["What do you mean", "What", "I'm confused"],
+            "responses": ["If you could evaluate, or tell me more, is what I meant."]
+        },
+        {
+            "tag": "conversation_no",
+            "patterns": ["No", "I don't think so", "No thanks", "I'll pass", "Maybe next time", "That's not right", "Not that", "I didn't mean that", "Oops", "That's not what I meant", "You made a mistake", "I ignore"],
+            "responses": ["If you insist.", "That's okay.", "Sure thing.", "Alright then.", "My apologies."]
+        },
+
+        {
+            "tag": "poker",
+            "patterns": ["define poker", "what is poker"],
+            "responses": ["A game with two starting cards and later community cards that involves trying to make the best hand and win the money in the pot", 
+            "any of several card games in which a player bets that the value of his or her hand is greater than that of the hands held by others, in which each subsequent player must either equal or raise the bet or drop out, and in which the player holding the highest hand at the end of the betting wins the pot.",
+             "Poker is a family of comparing card games in which players wager over which hand is best according to that specific game's rules."]
+        },
+        {
+            "tag": "rules",
+            "patterns": ["rules", "play poker", "how play", "how played"],
+            "responses": ["The rules to Texas Holdem Poker are simple. Each time it is your turn you can fold, match the current largest bet (call), or raise the current biggest bet. The goal is to make the best 5 card hand out of the community cards and your two hole cards.",
+            "The goal of a Texas hold'em game is to use your hole cards in combination with the community cards to make the best possible five-card poker hand."]
+        },
+        {
+            "tag": "stakes",
+            "patterns": ["stakes"],
+            "responses": ["What stakes one should play is an important question. This is determined by your skill level and bankroll. If you are new to the game, it is best to start at the smallest stakes you can find. Ideally you would like to have a bankroll of 50+ buy ins for cash games at any stakes you play.",
+            "It is wise to start at the smallest stakes available to get some experience and learn cheaply."]
+        },
+        {
+            "tag": "where",
+            "patterns": ["Where"],
+            "responses": ["You can play live poker at a casino/cardroom, you can play private games with friends, or you can play online on poker sites/apps", 
+            "Casinos, cardrooms, online sites, and private games are all options for playing poker."]
+        },
+        {
+            "tag": "strategies",
+            "patterns": ["strategy", "strategies", "poker strategy", "poker strategies"],
+            "responses": ["There are all types of basic and advanced strategies used in poker play. They occur at different phases of a poker game.", 
+            "Good poker strategy requires being balanced (bluffing and value betting at the right frequencies)."]
+        },
+        {
+            "tag": "phases",
+            "patterns": ["phases", "poker phases", "game looks", "stages", "game stages"],
+            "responses": ["A poker game starts with the preflop, where each person is dealt two cards. The other phases after are the flop, turn, and river.",
+            "There are four streets/parts of a hand, preflop, flop, turn, and river."]
+        },
+        {
+            "tag": "live",
+            "patterns": ["in person", "live", "traditional setting", "live setting"],
+            "responses": ["Live poker is with physical chips and cards.", "Playing in person rather than online."]
+        },
+        {
+            "tag": "online",
+            "patterns": ["online", "online setting"],
+            "responses": ["Online poker is played from your laptop or phone.", "Playing on a poker site or app."]
+        },
+        {
+            "tag": "cbet",
+            "patterns": ["cbet"],
+            "responses": ["A cbet is a continuation bet, the aggressor on the last street continues betting again into the other player(s)", "Continuing betting on the next round of betting."]
+        },
+        {
+            "tag": "call",
+            "patterns": ["call"],
+            "responses": ["Matching the current biggest bet.", "Put in equal amount of money in as has already been bet."]
+        },
+        {
+            "tag": "fold",
+            "patterns": ["fold"],
+            "responses": ["To fold is to turn in your cards to the dealer and not be able to win or lose anymore chips in the current hand.", "Give up on the current hand."]
+        },
+        {
+            "tag": "raise",
+            "patterns": ["raise"],
+            "responses": ["A raise increases the current biggest bet on the current street.", "Increase the bet."]
+        },
+        {
+            "tag": "blinds",
+            "patterns": ["blinds"],
+            "responses": ["Every hand starts with the small blind and big blind posting some amount of chips before seeing any cards. Every hand starts out with money already in the pot.", "The amount in the pot before any betting happens."]
+        },
+        {
+            "tag": "big blind",
+            "patterns": ["big blind"],
+            "responses": ["The blind that posts the bigger amount of chips.", "The money put in blind that is bigger than what the small blind posts."]
+        },
+        {
+            "tag": "small blind",
+            "patterns": ["small blind"],
+            "responses": ["The blind that posts the smaller amount of chips.", "The smaller blind amount of money put into the pot."]
+        },
+        {
+            "tag": "positions",
+            "patterns": ["What is a position", "What are positions", "define positions"],
+            "responses": ["At a poker table there are positions, UTG, UTG+1, UTG+2, LJ, HJ, CO, BTN, SB, and BB. These positions rotate each hand.", "The seats at the poker table."]
+        },
+        {
+            "tag": "bluffing",
+            "patterns": ["bluffing", "bluff"],
+            "responses": ["Bluffing tries to get your opponent to fold a better hand than yours in order to win the pot.", "Convincing your opponent to fold a better hand."]
+        },
+        {
+            "tag": "valuebet",
+            "patterns": ["value bet"],
+            "responses": ["Value betting is betting to get value from worse hands.", "Get value from a hand that is worse."]
+        },
+        {
+            "tag": "handcategories",
+            "patterns": ["category", "categories"],
+            "responses": ["Because at each point in a poker hand there are so many hands you can have it helps to think of them in categories, category 1 = value hands, category 2 = marginal hands, category 3 = draws, category 4 = air.",
+            "A system for classifiying all hands in a range of hands."]
+        },
+        {
+            "tag": "handrank",
+            "patterns": ["rank", "ranking"],
+            "responses": ["The possible hands in Texas Holdem from worst to best are: High Card, One Pair, Two Pair, Three of a Kind, Straight, Flush, Fullhouse, Four of a kind, Straight Flush, Royal Flush",
+            "High card, one pair, two pair, set, straight, flush, fullhouse, quads, straight flush, royal flush."]
+        },
+        {
+            "tag": "draw",
+            "patterns": ["draw"],
+            "responses": ["A draw is usually a flush draw or straight draw, a hand that is currently nothing but if it hits certain cards becomes a very strong hand.",
+            "A hand that could improve to a strong hand."]
+        },
+        {
+            "tag": "preflop",
+            "patterns": ["preflop"],
+            "responses": ["Preflop is the first part of a Texas Holdem hand. Two cards are dealt to every player. A round of betting is then done starting with the UTG player acting first. Preflop is before the flop (first three community cards) come out.",
+            "Betting round before the flop."]
+        },
+        {
+            "tag": "flop",
+            "patterns": ["flop"],
+            "responses": ["The first 3 community cards dealt after preflop betting is completed.", "First 3 cards."]
+        },
+        {
+            "tag": "turn",
+            "patterns": ["turn"],
+            "responses": ["The fourth community card dealt after the flop betting is completed.", "Fourth card."]
+        },
+        {
+            "tag": "river",
+            "patterns": ["river"],
+            "responses": ["The fifth and final card dealt after the turn betting is completed.", "The 5th and final card."]
+        },
+        {
+            "tag": "cards",
+            "patterns": ["cards"],
+            "responses": ["You're dealt 2 cards, and the community (everyone in the game) is dealt 5 cards.", "The cards that are used are a standard card deck of 52 cards, excluding jokers."]
+        },
+        {
+            "tag": "holecards",
+            "patterns": ["hole cards", "hole card"],
+            "responses": ["An individual player's cards. It's best to keep the knowledge of these cards hidden from other players.", "The 2 cards each player is dealt, and must keep hidden."]
+        },
+        {
+            "tag": "communitycards",
+            "patterns": ["community card", "community's cards"],
+            "responses": ["The community cards are what everyone in the game shares. 5 are dealt throughout the game.", "Three cards are dealt to the center on the flop, then 1 on both the turn and river. Everyone shares these cards."]
+        },
+
+        {
+            "tag": "preflop_strategies",
+            "patterns": ["consider preflop", "play preflop", "preflops strategy", "preflop strategies", "preflop plays", "playing preflop", "playing the preflop", "play preflop"],
+            "responses": ["There are many different considerations one must make on the preflop. A couple include considering what hands to play, as well as when it's best to call, raise, 3bet, and 4bet with.",
+            "On the preflop, you should be betting good and playable hands, and folding bad hands that lose money mostly."]
+        },
+        {
+            "tag": "preflop_hands",
+            "patterns": ["Hands play preflop", "Hands preflop", "When to preflop", "preflop hands", "fold preflop", "bet preflop"],
+            "responses": ["While the answer to what hands to play preflop is very complex and charts are needed to understand what to play in general, the best preflop hands are pocket pairs (22-AA), big broadway hands such as AK, AQ, AJ, KQ etc., and suited connectors such as 65s, 78s, 89s, etc.",
+            "Pocket pairs, suited hands, and offsuit hands."]
+        },
+        {
+            "tag": "preflop_raise",
+            "patterns": ["raise preflop", "raise the preflop", "raise on preflop"],
+            "responses": ["You should raise preflop with good hands that want to start to build a bigger pot, you should also raise some speculative hands as bluffs to balance out the good hands.", "A raise before the flop."]
+        },
+        {
+            "tag": "preflop_call",
+            "patterns": ["call preflop", "call the preflop", "call on preflop"],
+            "responses": ["You should call preflop with hands that aren't good enough to raise but not bad enough to fold.", "Calling a bet before the flop."]
+        },
+        {
+            "tag": "preflop_3bet",
+            "patterns": ["3bet preflop", "3 bet preflop", "3bet the preflop", "3bet on preflop", "3 bet the preflop", "3 bet on preflop"],
+            "responses": ["You should 3 bet preflop with premium hands such as QQ, KK, AA, AK, and some bluffs too.", "Reraising the first raise preflop."]
+        },
+        {
+            "tag": "preflop_4bet",
+            "patterns": ["4bet preflop", "4 bet preflop", "4bet the preflop", "4bet on preflop", "4 bet the preflop", "4 bet on preflop"],
+            "responses": ["If you RFI (raise first in), and get 3bet (reraised), then you have the option of raising again, this should be done with the best hands such as QQ, KK, AA, AK, and some carefully selected bluffs such as A5s.", "Reraising after a 3-bet preflop."]
+        },
+        {
+            "tag": "preflop_sizing",
+            "patterns": ["raise high preflop", "raise low preflop", "raise big preflop", "raise small preflop", "how much preflop", "Preflop sizing", "how much raise preflop"],
+            "responses": ["You should open to 3x the BB in many games, however smaller and bigger sizings can be better depending on various factors in your game.", "The size you RFI, 3-bet, and 4-bet preflop."]
+        },
+        {
+            "tag": "flop_strategies",
+            "patterns": ["consider flop", "play flop", "play the flop", "flop strategy", "flop strategies", "flop plays", "playing flop", "playing the flop"],
+            "responses": ["There are many different considerations one must make on the flop. A couple include when to cbet, sizings, what category your hand is, and what type of flop it is.", "The complex question of when to bet and how much."]
+        },
+        {
+            "tag": "flop_cbet",
+            "patterns": ["continuation bet flop", "cbet flop", "bet flop", "continuation bet the flop", "cbet the flop", "bet the flop", "continuation bet on flop", "cbet on flop", "bet on flop"],
+            "responses": ["When to c-bet the flop is a complex question, to keep it simple bet your best hands and best draws in most situations.", "Betting the flop as the preflop aggressor."]
+        },
+        {
+            "tag": "flop_sizing",
+            "patterns": ["raise high flop", "raise low flop", "raise big flop", "raise small flop", "how much flop", "flop sizing", "how much raise flop"],
+            "responses": ["Flop c-bets should be somewhere between 25%-75% pot in most cases, however occasionally betting smaller than 25% and betting bigger than 100% (overbetting the pot) can be the best option.", "The size of the flop bet you choose."]
+        },
+        {
+            "tag": "flop_handcategories",
+            "patterns": ["flop categories", "flop category", "flop hands", "flop hand category", "flop hand categories"],
+            "responses": ["Once the flop has been dealt the hands you play preflop change in value depending on how they connect with the flop. Sometimes a good preflop hand completely misses the flop and sometimes a weak preflop hand makes two pair, flush, straight or other very strong hands.",
+            "Recategorizing your hands based on the first 3 cards that come out."]
+        },
+        {
+            "tag": "flop_types",
+            "patterns": ["Flop types", "Types of flops"],
+            "responses": ["There are several main flop types. Monotone (all same suit), paired (two of the same card 22K, or 334 etc.), two tone (2 spades and 1 heart for example), and rainbow (3 different suits).",
+            "Paired, monotone, flush draw, connected, disconnected, are all ways to describe a flop."]
+        },
+        {
+            "tag": "turn_strategies",
+            "patterns": ["consider turn", "play turn", "play the turn", "turn strategy", "turn strategies", "turn plays", "playing turn", "playing the turn"],
+            "responses": ["There are many different considerations one must make on the turn. A couple include when to cbet, sizings, what category your hand is, and what type of turn it is, similarly to the flop.", "On the turn, it's important to note your sizings, what category your hand is, what type of turn it is, and when you should cbet."]
+        },
+        {
+            "tag": "turn_cbet",
+            "patterns": ["continuation bet turn", "cbet turn", "bet turn", "continuation bet the turn", "cbet the turn", "bet the turn", "continuation bet on turn", "cbet on turn", "bet on turn"],
+            "responses": ["Usually you want to continue betting the turn with strong value hands and big draws, however this is a very complex question that depends on a huge number of factors.", "Continuing to bet after the turn card."]
+        },
+        {
+            "tag": "turn_sizing",
+            "patterns": ["raise high turn", "raise low turn", "raise big turn", "raise small turn", "how much turn", "turn sizing", "how much raise turn"],
+            "responses": ["What size to bet on the turn is once again a question that depends on various factors but typically the bet is somewhere between 50% to 150% of the pot.", "Usually a percentage of the pot between 33%-150%."]
+        },
+        {
+            "tag": "turn_handcategories",
+            "patterns": ["turn categories", "turn category", "turn hands", "turn hand category", "turn hand categories"],
+            "responses": ["The turn sometimes changes the board a lot and sometimes is a brick, you must revaluate all your hands and determine which should continue betting and which must give up or slow down to avoid the pot getting too big for their relative strength.",
+            "Categorize all your hands based on how good they are on a particular turn card."]
+        },
+        {
+            "tag": "turn_types",
+            "patterns": ["turn types", "types of turns"],
+            "responses": ["The main types of turns are flush/straight completing turns, bricks that don't change anything, overcards (cards bigger than all the flop cards), and board pairing cards (such as flop KJT, turn T pairing the T).",
+            "Several main types, completely board unchanging cards, pair the board, bring in a draw, or an over card."]
+        },
+        {
+            "tag": "river_strategies",
+            "patterns": ["consider river", "play river", "playing the river", "river strategy", "river strategies", "river plays", "playing river", "play the river"],
+            "responses": ["There are many different considerations one must make on the river. A couple include when to bluff, catching bluffs, sizings, and leads", "It's important to note your sizings, and when you should lead, bluff, and bluffcatch on the river."]
+        },
+        {
+            "tag": "river_sizing",
+            "patterns": ["raise high river", "raise low river", "raise big river", "raise small river", "how much river", "river sizing", "how much raise river"],
+            "responses": ["The answer to what size to bet the river depends on many factors once again however typically you will want to bet all in with your best hands and some bluffs, and sometimes smaller when you are betting for thinner value and with some other bluffs.",
+            "The size to bet on the last card."]
+        },
+        {
+            "tag": "river_bluffing",
+            "patterns": ["river bluff", "bluffing strategy", "pulling off bluffs", "bluffing strategies", "bluff strategy", "bluff strategies", "bluff on river", "bluff the river"],
+            "responses": ["River bluffing is important as if you only bet your good hands your opponents can exploit you and never call you. It is important to be balanced and not overdo it as too many bluffs will allow your opponents to call you often.",
+            "Emptying the clip and putting often all of your remaining chips to get the opponent to fold a hand that beats you."]
+        },
+        {
+            "tag": "river_bluffcatch",
+            "patterns": ["bluff catch", "bluff catching", "bluffcatch", "bluffcatching", "catching a bluff", "catch a bluff"],
+            "responses": ["When facing (usually big/all in) bet on the river you often have a hand that can beat a bluff only, this is a bluff catching hand, like bluffs, bluff catching hands must be carefully selected.",
+            "Calling the river with a hand that only beats a bluff and no good hands."]
+        },
+        {
+            "tag": "river_leading",
+            "patterns": ["river lead", "leading on river", "lead river", "lead the river"],
+            "responses": ["Leading the river involves not checking to the aggressor from the turn and instead betting into him, this is typically a good idea in certain types of spots where the aggressor from the turn will check a lot and you have value hands that can get called by hands the opponent will never bet if checked to.",
+            "Not checking in flow to the aggressor on the turn, and betting into him."]
+        }
+    ]
+}
