@@ -103,12 +103,14 @@ You can view the assignment directory [here](Assignment%207%20-%20Text%20Classif
 - [Overview](Assignment%207%20-%20Text%20Classification/TextClassification.pdf)
 - [Code](Assignment%207%20-%20Text%20Classification/TextClassification.ipynb)
 
-## **Assignment 8 - TBD**
+## **Assignment 8 - Reading ACL Papers**
 
-TBD.
+This assignment was a non-coding assignment that involved reading an ACL paper of our choosing, and writing a summary/reflection about it.
+
+You can view the assignment directory [here](Assignment%208%20-%20Reading%20ACL%20Papers).
 
 *Notable File(s):* 
-- TBD
+- [Paper](Assignment%208%20-%20Reading%20ACL%20Papers/ACL%20Paper%20Summary.pdf)
 
 ## **Assignment 9 - Chatbot**
 
