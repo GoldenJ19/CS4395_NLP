@@ -129,7 +129,10 @@ You can view the assignment directory [here](Assignment%209%20-%20Chatbot).
 
 ## **Assignment 10 - Text Classification 2**
 
-TBD.
+This assignment involved using the Tensorflow Keras Library to perform Deep Learning on a text classification data set of our choosing. This is the final assignment for CS 4395 Human Language Technologies.
+
+You can view the assignment directory [here](Assignment%2010%20-%20Text%20Classification%202).
 
 *Notable File(s):* 
-- TBD
+- [Overview](Assignment%2010%20-%20Text%20Classification%202/TextClassification2.pdf)
+- [Code](Assignment%2010%20-%20Text%20Classification%202/TextClassification2.ipynb)
