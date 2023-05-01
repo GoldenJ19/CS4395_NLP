@@ -1,19 +1,17 @@
-# **CS4395 - NLP**
-## **Overview**
+# **Overview**
 
 This is a repository (sub-portfolio) containing all the programs created for the class, Human Language Technologies (AKA Natural Language Processing) during my 4th year of college.
 
-*Notable File(s):* 
-- [Write-Up](Overview/Overview%20of%20NLP.pdf) 
+For more details on what soft skills this portfolio displays, or for a reflection on the portfolio as a whole, view the Overview directory [here](Overview).
 
-## **Assignment 1 - Text Processing with Python**
+# **Assignment 1 - Text Processing with Python**
 
 This simple assignment involved processing through a text file using regex pattern checks. It also had us try out object creation and serialization in python.
 
 You can view the assignment 1 directory [here](Assignment%201%20-%20Text%20Processing%20with%20Python).
 
 *Run Instructions:* 
-- Open command prompt into the directory where the .py file is.
+- Open command prompt into the directo`ry where the .py file is.
 - Use the command 'python TextProcessing.py data.csv' to run the program.
     - You can replace 'data.csv' with the path to any file of your choosing. It should follow a similar format as the provided data.csv file, though.
 
@@ -21,7 +19,7 @@ You can view the assignment 1 directory [here](Assignment%201%20-%20Text%20Proce
 - [Overview](Assignment%201%20-%20Text%20Processing%20with%20Python/TextProcessing.pdf)
 - [Code](Assignment%201%20-%20Text%20Processing%20with%20Python/TextProcessing.py)
 
-## **Assignment 2 - Word Guessing Game**
+# **Assignment 2 - Word Guessing Game**
 
 This assignment involved tokenizing words from a text file, extracting the nouns, and using the extracted nouns as words for a word guessing game. The preprocessing runs through the terminal, however I'd designed a simple GUI to play the word guessing game through.
 
@@ -36,7 +34,7 @@ You can view the assignment 2 directory [here](Assignment%202%20-%20Word%20Guess
 *Notable File(s):* 
 - [Code](Assignment%202%20-%20Word%20Guessing%20Game/WordGuessingGame.py) 
 
-## **Assignment 3 - WordNet**
+# **Assignment 3 - WordNet**
 
 This assignment involved exploring the WordNet and SentiWordNet APIs of the NLTK library. Specifically, we explore word relations/hierarchies, sentiment scoring, and collocation identification.
 
@@ -46,7 +44,7 @@ You can view the assignment directory [here](Assignment%203%20-%20WordNet).
 - [Overview](Assignment%203%20-%20WordNet/WordNet.pdf) 
 - [Code](Assignment%203%20-%20WordNet/WordNet.ipynb) 
 
-## **Assignment 4 - N-Gram Language Model**
+# **Assignment 4 - N-Gram Language Model**
 
 This assignment involved creating language models for a few languages, and using the models to predict the language being used in different lines of a text file using a probablistic approach. Specifically, this is done using Laplace smoothing.
 
@@ -65,7 +63,7 @@ You can view the assignment directory [here](Assignment%204%20-%20N-Gram%20Langu
 - [Code - Build Language Model](Assignment%204%20-%20N-Gram%20Language%20Model/BuildLM.py) 
 - [Code - Evaluate Language Model](Assignment%204%20-%20N-Gram%20Language%20Model/EvaluateLM.py) 
 
-## **Assignment 5 - Sentence Parsing**
+# **Assignment 5 - Sentence Parsing**
 
 This assignment involved performing sentence parsing by hand on a complex sentence of our choosing. For that reason, there was no programming involved in this assignment. This exists in the portfolio to demonstrate my understanding of sentence parsing approaches.
 
@@ -74,7 +72,7 @@ You can view the assignment directory [here](Assignment%205%20-%20Sentence%20Par
 *Notable File(s):* 
 - [Submission](Assignment%205%20-%20Sentence%20Parsing/Sentence%20Parsing.pdf)
 
-## **Assignment 6 - Web Crawler**
+# **Assignment 6 - Web Crawler**
 
 This assignment involved creating a knowledge base by web-scraping a webpage of our choosing, getting relevant links off of the webpage, and scraping each of those links for information on a topic for use in the knowledge base.
 
@@ -93,7 +91,7 @@ You can view the assignment directory [here](Assignment%206%20-%20Web%20Crawler)
 - [Code - Scrape Webpage](Assignment%206%20-%20Web%20Crawler/ScrapeWebpage.py)
 - [Code - Build Knowledge Base](Assignment%206%20-%20Web%20Crawler/BuildKB.py)
 
-## **Assignment 7 - Text Classification**
+# **Assignment 7 - Text Classification**
 
 This assignment involved using various machine learning algorithms to perform text classification on a data set of our choosing.
 
@@ -103,7 +101,7 @@ You can view the assignment directory [here](Assignment%207%20-%20Text%20Classif
 - [Overview](Assignment%207%20-%20Text%20Classification/TextClassification.pdf)
 - [Code](Assignment%207%20-%20Text%20Classification/TextClassification.ipynb)
 
-## **Assignment 8 - Reading ACL Papers**
+# **Assignment 8 - Reading ACL Papers**
 
 This assignment was a non-coding assignment that involved reading an ACL paper of our choosing, and writing a summary/reflection about it.
 
@@ -112,7 +110,7 @@ You can view the assignment directory [here](Assignment%208%20-%20Reading%20ACL%
 *Notable File(s):* 
 - [Paper](Assignment%208%20-%20Reading%20ACL%20Papers/ACL%20Paper%20Summary.pdf)
 
-## **Assignment 9 - Chatbot**
+# **Assignment 9 - Chatbot**
 
 This assignment involved us creating a simple chatbot, focused on a specific topic of interest. It is expected to remember things about the user and be able to interact with the user.
 
@@ -127,7 +125,7 @@ You can view the assignment directory [here](Assignment%209%20-%20Chatbot).
 - [Report](Assignment%209%20-%20Chatbot/design_docs/Chatbot%20Project%20Report.pdf)
 - [Code](Assignment%209%20-%20Chatbot/PokerChatbot.py)
 
-## **Assignment 10 - Text Classification 2**
+# **Assignment 10 - Text Classification 2**
 
 This assignment involved using the Tensorflow Keras Library to perform Deep Learning on a text classification data set of our choosing. This is the final assignment for CS 4395 Human Language Technologies.
 
